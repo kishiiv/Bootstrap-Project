@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>gooGreenoo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles_veg.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <div class = "navber-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+                <a class = "navbar-brand" href="index.html">gooGreenoo</a></div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class = "nav navbar-nav">
+                 <li ><a href="index.html">Home</a></li>
+                 <li class="dropdown">
+                   <a class="dropdown-toggle active" data-toggle="dropdown" href="#">Category
+                     <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                       <li class="active"><a href="Veg.html">Vegetables</a></li>
+                       <li><a href="#">Fruits</a></li>
+                       <li><a href="nonveg.html">Non Veg</a></li>
+                     </ul>
+                   </li>  
+                   <li><a href="#">About Us</a></li>
+                </ul>
+                <form class="navbar-form navbar-left" action="/action_page.php">
+                 <div class="form-group">
+                   <input type="text" class="form-control" placeholder="Search">
+                 </div>
+                 <button type="submit" class="btn btn-default">Submit</button>
+               </form>
+               <ul class="nav navbar-nav navbar-right">
+                 <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+               </ul>
+              </div>
+            </div>
+          </nav>
+</br>
+<div class="container">
+    <div class="row">
+       
+            <input t    ype="text" id="search-bar" placeholder="Search for Vegetables" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+         
+    </div>
+    <div class="row">
+        <ol class="col-12 breadcrumb">
+            <li class="breadcrumb-item"><a  href="./index.html">Home</a></li>
+            <li class="breadcrumb-item active">Non-Veg Foods</li></br>
+            <p id="breadcrumb-name">Non-Veg Foods</p>
+            <div class="dropdown" id="sortby">
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                  Sort by
+                </button>
+                <div class="dropdown-menu">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" checked>Relevance</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="optradio">Name (A to Z)</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="optradio">Price (Low to High)</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="optradio">Price (High to Low)</label>
+                      </div>
+                </div>
+              </div>
+        </ol>
+    
+        <div class="card-deck">
+            <div class="card col-md-3 col-sm-6 box-hover">
+                <img class="card-img-top" src="img/vegetables/onion.png" alt="Card image cap">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Onion</h5>
+                    <p class="weight">1 Kg</p>
+                    <i class="fa fa-inr" id="price"> 34</i>
+                </div>
+                <a href="#" class="btn" id="button-card">ADD TO CART</a>
+        </div>
+        <div class="card col-md-3 col-sm-6 box-hover">
+            <img class="card-img-top " src="img//vegetables/potato.jpg" alt="Card image cap">
+            <div class="card-body text-center">
+                <h5 class="card-title">Potato</h5>
+                <p class="weight">1 Kg</p>
+                <i class="fa fa-inr" id="price"> 27</i>
+            </div>
+            <a href="#" class="btn" id="button-card">ADD TO CART</a>
+        </div>
+        <div class="card col-md-3 col-sm-6 box-hover">
+            <img class="card-img-top" src="img//vegetables/tomato.jpg" alt="Card image cap">
+            <div class="card-body text-center">
+                <h5 class="card-title">Tomato</h5>
+                <p class="weight">1 Kg</p>
+                <i class="fa fa-inr" id="price"> 50</i>
+            </div>
+            <a href="#" class="btn" id="button-card">ADD TO CART</a>
+        </div>
+        <div class="card col-md-3 col-sm-6 box-hover">
+            <img class="card-img-top" src="img//vegetables/ladyfinger.jpg" alt="Card image cap">
+            <div class="card-body text-center">
+                <h5 class="card-title">Lady Finger</h5>
+                <p class="weight">1 Kg</p>
+                <i class="fa fa-inr" id="price"> 40</i>
+            </div>
+            <a href="#" class="btn" id="button-card">ADD TO CART</a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="card-deck">
+        <div class="card col-md-3 box-hover">
+            <img class="card-img-top" src="img//vegetables/blackbrinjal.jpg" alt="Card image cap">
+            <div class="card-body text-center">
+                <h5 class="card-title">Black Brinjal</h5>
+                <p class="weight">1 Kg</p>
+                <i class="fa fa-inr" id="price"> 45</i>
+            </div>
+            <a href="#" class="btn" id="button-card">ADD TO CART</a>
+        </div>
+        <div class="card col-md-3 box-hover">
+            <img class="card-img-top " src="img//vegetables/cabbage.jpg" alt="Card image cap">
+            <div class="card-body text-center">
+                <h5 class="card-title">Cabbage</h5>
+                <p class="weight">1 Kg</p>
+                <i class="fa fa-inr" id="price"> 35</i>
+            </div>
+            <a href="#" class="btn" id="button-card">ADD TO CART</a>
+        </div>
+        <div class="card col-md-3 box-hover">
+            <img class="card-img-top" src="img//vegetables/lauki.jpg" alt="Card image cap">
+            <div class="card-body text-center">
+                <h5 class="card-title">Bottle Gourd (Lauki)</h5>
+                <p class="weight">1 Kg</p>
+                <i class="fa fa-inr" id="price"> 20</i>
+            </div>
+            <a href="#" class="btn" id="button-card">ADD TO CART</a>
+        </div>
+        <div class="card col-md-3 box-hover">
+            <img class="card-img-top" src="img//vegetables/cucumber.jpg" alt="Card image cap">
+            <div class="card-body text-center">
+                <h5 class="card-title">Cucumber</h5>
+                <p class="weight">1 Kg</p>
+                <i class="fa fa-inr" id="price"> 30</i>
+            </div>
+            <a href="#" class="btn" id="button-card">ADD TO CART</a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 offset-1 col-sm-2">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="col-7 col-sm-5">
+                <h5 style="color: black;"><b> Address</b></h5>
+                <address>
+                121, Clear Water Bay Road<br>
+                Clear Water Bay, Kowloon<br>
+                HONG KONG<br>
+                <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                <i class="fa fa-envelope fa-lg"></i>:
+                <a href="mailto:confusion@food.net">confusion@food.net</a>
+                </address>
+            </div>
+            <div class="col-12 col-sm-4 align-self-center">
+                <div class="text-center">
+                    <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                    <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </footer>
+
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+
+
+
