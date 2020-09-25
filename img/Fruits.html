@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>gooGreenoo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles_veg.css">
+    </head>
+    <body>
+       
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <div class = "navber-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+                <a class = "navbar-brand" href="index.html">gooGreenoo</a></div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class = "nav navbar-nav">
+                 <li><a href="./index.html">Home</a></li>
+                 <li class="dropdown">
+                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Category
+                     <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                       <li><a href="Veg.html">Vegetables</a></li>
+                       <li class="active"><a href="./Fruits.html">Fruits</a></li>
+                       <li><a href="nonveg.html">Non Veg</a></li>
+                     </ul>
+                   </li>  
+                   <li><a href="About.html">About Us</a></li>
+                </ul>
+               <ul class="nav navbar-nav navbar-right">
+                <li><a href="sign.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+               </ul>
+              </div>
+            </div>
+          </nav>
+        </br>
+        <div class="container">
+            <div class="search">
+                <input type="text" id="search-bar" placeholder="Search for Fruits..." name="search">
+                <button type="submit" id="search-bar-icon"><i class="fa fa-search"></i></button>
+            </div></br>
+            <div class="row">
+                <ol class="col-12 breadcrumb">
+                    <li class="breadcrumb-item"><a  href="./index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Fruits</li></br>
+                    <div class="dropdown" id="sortby">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" style="border-radius: 8px;">
+                          Sort by
+                        </button>
+                        <div class="dropdown-menu">
+                            <div class="radio">
+                                <label><input type="radio" name="optradio" checked>Relevance</label>
+                              </div>
+                              <div class="radio">
+                                <label><input type="radio" name="optradio">Name (A to Z)</label>
+                              </div>
+                              <div class="radio">
+                                <label><input type="radio" name="optradio">Price (Low to High)</label>
+                              </div>
+                              <div class="radio">
+                                <label><input type="radio" name="optradio">Price (High to Low)</label>
+                              </div>
+                        </div>
+                      </div>     
+                      <p id="breadcrumb-name">Fruits</p>          
+                </ol>
+
+                <div class="card-deck">
+                    <div class="card col-md-3 col-sm-6 box-hover">
+                        <img class="card-img-top" src="img/fruits/pomegranate.jpg" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Pomegranate (Anaar)</h5>
+                            <p class="weight">1 Kg</p>
+                            <i class="fa fa-inr" id="price"> 161</i>
+                        </div>
+                        <a href="#" class="btn" id="button-card">ADD TO CART</a>
+                    </div>
+                    <div class="card col-md-3 col-sm-6 box-hover">
+                        <img class="card-img-top" src="img/fruits/apple.jpg" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Apple</h5>
+                            <p class="weight">1 Kg</p>
+                            <i class="fa fa-inr" id="price"> 200</i>
+                        </div>
+                        <a href="#" class="btn" id="button-card">ADD TO CART</a>
+                    </div>
+                    <div class="card col-md-3 col-sm-6 box-hover">
+                        <img class="card-img-top" src="img/fruits/orange.jpg" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Orange</h5>
+                            <p class="weight">1 Kg</p>
+                            <i class="fa fa-inr" id="price"> 150</i>
+                        </div>
+                        <a href="#" class="btn" id="button-card">ADD TO CART</a>
+                    </div>
+                    <div class="card col-md-3 col-sm-6 box-hover">
+                        <img class="card-img-top" src="img/fruits/coconut.jpg" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tender Coconut</h5>
+                            <p class="weight">1 Unit</p>
+                            <i class="fa fa-inr" id="price"> 50</i>
+                        </div>
+                        <a href="#" class="btn" id="button-card">ADD TO CART</a>
+                    </div>
+                    <div class="card col-md-3 col-sm-6 box-hover">
+                        <img class="card-img-top" src="img/fruits/mango.jpg" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mango</h5>
+                            <p class="weight">1 Kg</p>
+                            <i class="fa fa-inr" id="price"> 100</i>
+                        </div>
+                        <a href="#" class="btn" id="button-card">ADD TO CART</a>
+                    </div>
+                    <div class="card col-md-3 col-sm-6 box-hover">
+                        <img class="card-img-top " src="img/fruits/papaya.jpg" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Papaya</h5>
+                            <p class="weight">1 Unit</p>
+                            <i class="fa fa-inr" id="price"> 80</i>
+                        </div>
+                        <a href="#" class="btn" id="button-card">ADD TO CART</a>
+                    </div>
+                    <div class="card col-md-3 col-sm-6 box-hover">
+                        <img class="card-img-top" src="img/fruits/mosambi.jpg" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sweet Lime (Mosambi)</h5>
+                            <p class="weight">1 Kg</p>
+                            <i class="fa fa-inr" id="price"> 75</i>
+                        </div>
+                        <a href="#" class="btn" id="button-card">ADD TO CART</a>
+                    </div>
+                    <div class="card col-md-3 col-sm-6 box-hover">
+                        <img class="card-img-top" src="img/fruits/grapes.jpg" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Red Globe Grapes</h5>
+                            <p class="weight">500 g</p>
+                            <i class="fa fa-inr" id="price"> 200</i>
+                        </div>
+                        <a href="#" class="btn" id="button-card">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container align-self-center">
+                <div class="row">
+                    <div class="col-4 offset-1 col-sm-2">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-7 col-sm-5">
+                        <h5 style="color: black;"><b> Address</b></h5>
+                        <address>
+                        121, Clear Water Bay Road<br>
+                        Clear Water Bay, Kowloon<br>
+                        HONG KONG<br>
+                        <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                        <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                        <i class="fa fa-envelope fa-lg"></i>:
+                        <a href="mailto:confusion@food.net">confusion@food.net</a>
+                        </address>
+                    </div>
+                    <div class="col-12 col-sm-4 align-self-center">
+                        <div class="text-center">
+                            <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                            <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+
+
+
